@@ -12,6 +12,7 @@ export const Ui = (() => {
       libContainer.append(notice);
     } else {
       books.forEach((book, index) => {//index to show each books position in array
+        // create a card for each book with each book's property listed in each card
         const card = document.createElement("div");
         card.classList.add("book-card");
         card.innerHTML = `<h3>${book.title} </h3> <p> ${book.author} </p> <span> (${book.pageCount} pages)</span>`;
