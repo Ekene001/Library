@@ -12,6 +12,7 @@ export const storage = (() => {
     const retrieveLibrary = () => {
         const Data = localStorage.getItem('Library')
 
+        // convert books from string to object
         if(!Data) return [];
         return JSON.parse(Data)
     }
